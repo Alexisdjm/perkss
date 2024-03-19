@@ -1,0 +1,17 @@
+{
+    "LABEL": {
+      "name": "title needs formatting",
+      "color": "EEEEEE"
+    },
+    "CHECKS": {
+      "regexp": "^(feat|fix|hotfix|change)\\((PRK-\\d+(, PRK-\\d+)*)\\): .+",
+      "regexpFlags": "g",
+      "ignoreLabels": ["dont-check-PRs-with-this-label", "meta"]
+    },
+    "MESSAGES": {
+      "success": "All OK",
+      "failure": "Failing CI test",
+      "notice": ""
+    }
+  }
+  

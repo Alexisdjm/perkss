@@ -1,0 +1,18 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "NYS5Y232X4.io.perkss.app",
+          "ZJSJK6W69A.io.perkss.app"
+        ],
+        "components": [
+          {
+            "/": "/*",
+            "comment": "Matches any URL to this subdomain"
+          }
+        ]
+      }
+    ]
+  }
+}

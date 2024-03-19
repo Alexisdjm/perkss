@@ -1,0 +1,16 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.perkss",
+      "sha256_cert_fingerprints": [
+        "FA:C6:17:45:DC:09:03:78:6F:B9:ED:E6:2A:96:2B:39:9F:73:48:F0:BB:6F:89:9B:83:32:66:75:91:03:3B:9C",
+        "68:33:5E:6D:87:D2:E4:EA:9C:1E:B0:68:A2:E7:66:90:94:AC:42:D1:D8:76:2F:2F:B5:B5:9A:03:52:A3:3D:19",
+        "44:1F:E2:76:92:07:36:04:74:C0:D4:85:4A:7E:00:42:12:44:41:04:67:4D:E2:61:49:76:90:35:DF:F1:01:31"
+      ]
+    }
+  }
+]

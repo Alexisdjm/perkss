@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing</title>
+    <link rel="stylesheet" href="../welcome/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <div id="video-container">
+        <video id="video" autoplay muted playsinline>
+            <source src="../welcome/assets/landing-video.MOV" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <span class="sound-on"><img src="../welcome/assets/sound.png" alt="Sonido"></span>
+    </div>
+
+    <div id="overlay" class="hidden">
+        <a href="https://play.google.com/store/apps/details?id=io.perkss&hl=es_419&gl=US&pli=1" class="download-btn"><img src="../welcome/assets/play-store.png" alt="Button"></a>
+        <a href="https://apps.apple.com/es/app/perkss/id6448196063?l=en-GB" class="download-btn"><img src="../welcome/assets/app-store.png" alt="Button"></a>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            var video = document.getElementById('video');
+            var soundOnButton = document.querySelector('.sound-on');
+            var downloadButtons = $('.download-btn');
+            var videoContainer = document.getElementById('video-container');
+
+            video.addEventListener('ended', function () {
+                // Muestra y desplaza el overlay hacia abajo para cubrir el video
+                anime({
+                    targets: '#overlay',
+                    top: '0',
+                    easing: 'easeInOutQuad',
+                    duration: 100,
+                    complete: function () {
+                        // Después de completar la transición del overlay, muestra los botones con una transición easeIn
+                        downloadButtons.css({ opacity: 1, transform: 'translateY(0)' });
+                    }
+                });
+
+                // Después de completar la transición, oculta el video
+                setTimeout(function () {
+                    video.style.display = 'none';
+                }, 1000);
+            });
+
+            soundOnButton.addEventListener('click', function () {
+                // Cambia el estado 'muted' del video
+                video.muted = !video.muted;
+
+                // Oculta el botón de sonido si el video ya no está en modo silencioso
+                if (!video.muted) {
+                    soundOnButton.style.display = 'none';
+                }
+            });
+
+            videoContainer.addEventListener('click', function () {
+                // Cambia el estado 'muted' del video al hacer clic en el contenedor de video
+                video.muted = !video.muted;
+
+                // Oculta el botón de sonido si el video ya no está en modo silencioso
+                if (!video.muted) {
+                    soundOnButton.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

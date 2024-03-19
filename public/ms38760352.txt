@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Archivo de comprobación de propiedad del dominio para Microsoft 365: colocar en la raíz del sitio web",
+  "Domain": "perkss.io",
+  "Id": "290cdcc3-d044-4855-b056-9048d5dfd28c"
+}
