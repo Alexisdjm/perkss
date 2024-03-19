@@ -2786,12 +2786,12 @@ div.active {
 }
 
 .arrow-semifooter--1 {
-  left: 15vw;
-  bottom: 4em;
+  left: calc(15vw + ((1920px - 100vw)*0.15));
+  bottom: 3.5em;
 }
 
 .arrow-semifooter--2 {
-  
+  right: calc(29vw + ((1920px - 100vw)*0.1));
 }
 
 /* -------------------------------------------------------- scroll to top --------------------------------------------- */
