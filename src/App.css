@@ -2643,10 +2643,6 @@ div.active {
   width: 35%;
 }
 
-/* #hero img.anotherBannerSI {
-  left: 0;
-} */
-
 #hero img.bannerSI {
   position: absolute;
   top: 93px;
@@ -2654,11 +2650,11 @@ div.active {
 }
 
 #hero.home img.bannerSI {
-  top: 0;
+  top: calc(100vh - 711px)
 }
 
 #hero.home .second-banner--image {
-  top: 66%;
+  top: calc(100vh - 300px);
   max-width: 470px;
   position: absolute;
   left: 20vw;
@@ -2670,12 +2666,8 @@ div.active {
   top: 0;
 }
 
-#hero .bannerSI {
-  top: 0;
-}
-
 #hero .anotherBannerSI {
-  top: 0;
+  top: calc(100vh - 711px);
   position: absolute;
 }
 
@@ -2750,6 +2742,7 @@ div.active {
   background-repeat: no-repeat;
   background-size: 100vw;
   justify-content: center;
+  position: relative;
 }
 
 .qr-code {
@@ -2786,6 +2779,19 @@ div.active {
   font-weight: 600;
   font-size: 20px;
   display: none;
+}
+
+.arrow-semifooter--1, .arrow-semifooter--2 {
+  position: absolute;
+}
+
+.arrow-semifooter--1 {
+  left: 15vw;
+  bottom: 4em;
+}
+
+.arrow-semifooter--2 {
+  
 }
 
 /* -------------------------------------------------------- scroll to top --------------------------------------------- */
@@ -2876,7 +2882,7 @@ div.active {
  }
 }
 
-@media only screen and (min-height: 895px) and (min-width: 412px) {
+@media only screen and (min-height: 895px) and (max-width: 412px) {
   #hero.users img.second-banner--image {
     max-width: 220px;
     position: absolute;

@@ -17,6 +17,8 @@ const Semifooter = ({appButtons}) => {
                         <img src={images.qrimg} alt="qr" loading="lazy" className="qr-code"></img>
                     }
                     <a href="https://app.perkss.io/" className="mobile-button--semifooter semifooter">Descarga Perks</a>
+                    <img src={images.semifooterVector1} className="arrow-semifooter--1" alt="arrow 1"></img>
+                    <img src={images.semifooterVector2} className="arrow-semifooter--2" alt="arrow 2"></img>
                     </div>
                 </div>
                 <img src={images.semifooter1} alt="man" loading="lazy" className="man-bg--footer"></img>
