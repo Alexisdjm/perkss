@@ -1,10 +1,10 @@
 import images from '../images/exporting';
-const HeroBanner = ({inner, css, children, bannerSI, anotherBannerSI, SecondBannerI, between, section, register}) => {
+const HeroBanner = ({inner, css, children, bannerSI, anotherBannerSI, SecondBannerI, section, register}) => {
     return(
         <>
             <section id="hero" className={section}>
                 <div className="new-container">
-                    <div className={between ? "row space-between" : "simple-flex align-items-center new-margin-content"}>
+                    <div className="simple-flex align-items-center new-margin-content">
                         {
                             register ? <>
                             <div className="button-set-mobile">
@@ -41,6 +41,8 @@ const HeroBanner = ({inner, css, children, bannerSI, anotherBannerSI, SecondBann
                                 <img src={SecondBannerI} className={'second-banner--image'} alt="banner"></img>
                             </> : ""
                         }
+
+                        <img src={images.heart} className={'heart-image--home'} alt="banner"></img>
 
                         <a href="https://app.perkss.io/" className="mobile-button--semifooter banner">Descarga Perks</a>
                         <div className={css}>

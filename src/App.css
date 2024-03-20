@@ -2645,18 +2645,20 @@ div.active {
 
 #hero img.bannerSI {
   position: absolute;
-  top: 93px;
   right: 0;
 }
 
 #hero.home img.bannerSI {
-  top: calc(100vh - 711px)
+  bottom: -100px;
+  top: auto !important;
 }
 
 #hero.home .second-banner--image {
-  top: calc(100vh - 300px);
+  bottom: -270px;
   max-width: 470px;
+  top: auto !important;
   position: absolute;
+  z-index: 0 !important;
   left: 20vw;
 }
 
@@ -2667,13 +2669,38 @@ div.active {
 }
 
 #hero .anotherBannerSI {
-  top: calc(100vh - 711px);
+  bottom: -100px;
+  top: auto !important;
   position: absolute;
 }
 
 #hero.home .new-align-hb {
   position: relative;
-  left: 40%;
+  left: 15vw;
+  z-index: 999;
+}
+
+.simple-flex.align-items-center.new-margin-content {
+  position: relative;
+  width: 100vw;
+}
+
+.btn-get-started {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-get-started:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#hero.home .heart-image--home {
+  display: block;
+  position: absolute;
+  left: 10em;
+}
+
+#hero.users .heart-image--home {
+  display: none;
 }
 
 /* -------------------------------------------------------- slider ---------------------------------------------------- */
@@ -2787,7 +2814,7 @@ div.active {
 
 .arrow-semifooter--1 {
   left: calc(15vw + ((1920px - 100vw)*0.15));
-  bottom: 3.5em;
+  bottom: 2.5em;
 }
 
 .arrow-semifooter--2 {
@@ -3430,8 +3457,9 @@ div.active {
     max-width: 500px;
   }
 
-  #hero img.second-banner--image {
-    left: 18vw;
+  #hero.home img.second-banner--image {
+    bottom: -250px;
+    max-width: 400px;
   }
 
   #hero.users img.second-banner--image {
@@ -3439,8 +3467,11 @@ div.active {
   }
 
   #hero.home .anotherBannerSI {
-    max-width: 550px;
-    top: calc(100vh - 466px);
+    max-width: 600px;
+  }
+  
+  #hero.home .heart-image--home {
+    left: 3em;
   }
 
   #hero.home .bannerSI {
@@ -3490,14 +3521,12 @@ div.active {
     max-width: 600px;
   }
 
-  #hero.home .anotherBannerSI {
-    max-width: 600px;
-    top: calc(100vh - 509px);
-  }
-
   #hero.home .bannerSI {
     max-width: 600px;
-    top: calc(100vh - 646px) !important;
+  }
+
+  #hero.home .new-align-hb {
+    left: 17vw;
   }
 
   .man-bg--footer {
