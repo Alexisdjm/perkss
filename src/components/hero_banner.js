@@ -1,22 +1,10 @@
 import images from '../images/exporting';
-const HeroBanner = ({inner, css, children, bannerSI, anotherBannerSI, SecondBannerI, section, register}) => {
+const HeroBanner = ({inner, css, children, bannerSI, anotherBannerSI, SecondBannerI, section}) => {
     return(
         <>
             <section id="hero" className={section}>
                 <div className="new-container">
                     <div className="simple-flex align-items-center new-margin-content">
-                        {
-                            register ? <>
-                            <div className="button-set-mobile">
-                                <a href="https://app.perkss.io/auth/signup" className="btn-get-started">Registro</a>
-                                <a href="https://calendly.com/eduardosg" className="btn-get-started">Agendar llamada</a>
-                            </div>
-                            </> : <>
-                            <div className="download-center-mobile">
-                                <a href="https://apps.apple.com/es/app/perkss/id6448196063" className="app-store"><img src={images.app_store} alt="App Store"></img></a>
-                                <a href="https://play.google.com/store/apps/details?id=io.perkss" className="g-play"><img src={images.google_play} alt="Google Play"></img></a>
-                            </div></>
-                        }
                         {
                             inner ? <>
                                 <div className="new-inner-element">
@@ -33,6 +21,7 @@ const HeroBanner = ({inner, css, children, bannerSI, anotherBannerSI, SecondBann
                         {
                             bannerSI ? <>
                                 <img src={bannerSI} className={'bannerSI'} alt="banner"></img>
+                                
                             </> : ""
                         }
 

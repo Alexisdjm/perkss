@@ -16,11 +16,7 @@ const Como = () => {
                         <h2>Es hora de repensar la forma en la que fidelizamos y adquirimos clientes</h2>
                         </div>
                         <p>
-                        Retener clientes es cada vez más difícil, adquirir nuevos es sumamente costoso. <b>Llegó el momento de
-                            invertir más en
-                            nuestros clientes</b>, en su experiencia y en la relación con la marca, y menos en Google, Instagram,
-                        Facebook, y en
-                        programas de fidelidad tradicionales que no funcionan.
+                        Frente a la creciente dificultad para retener clientes y el alto costo de adquirir nuevos, tenemos experiencia directa en estos desafíos y contamos con el conocimiento necesario para ayudarte.
                         </p>
                         <a href="/"><button className="btn-learn-more">Descubre cómo</button></a>
 

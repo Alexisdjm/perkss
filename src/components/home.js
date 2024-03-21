@@ -18,7 +18,8 @@ import Blockchain from './blockchain';
 import Cambio from './cambio';
 import Semifooter from './semifooter';
 import Footer from './footer';
-import FirstContent from './heroFirstContent'
+import FirstContent from './heroFirstContent';
+import MobileMessage from './mobileMessage'
 
 import { useState, useEffect } from 'react'
 import CookiesConsent from './CookiesConsent/CookiesConsent'
@@ -66,6 +67,7 @@ const Home = () => {
                 <FirstContent main={true} stylee={'medium-font new-hb-align'}/>
             </HeroBanner>
             <main id='main'>
+                <MobileMessage/>
                 <Benefits/>
                 <Como/>
                 <Services/>
