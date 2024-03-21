@@ -3015,11 +3015,11 @@ div.active {
     padding: 30px 30px 40px;
   }
 
-  .beneficios .sec-heading h2, #como .sec-heading h2 {
+  .beneficios .sec-heading h2, #como .sec-heading h2, #user-first .sec-heading h2 {
     font-size: 24px;
   }
 
-  .beneficios .sec-heading h5 {
+  .beneficios .sec-heading h5, #user-first .col-lg-6.pull-right.order-lg-2 p {
     font-size: 18.33px;
   }
 
@@ -3027,7 +3027,7 @@ div.active {
     color: black;
   }
 
-  #como .col-lg-6.pull-left.order-lg-1 {
+  #como .col-lg-6.pull-left.order-lg-1, #user-first .col-lg-6.pull-right.order-lg-2 {
     padding: 0 30px;
   }
 
@@ -3191,6 +3191,39 @@ div.active {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     position: relative;
     z-index: 99;
+  }
+
+  #user-first.como.scroll-reveal {
+    padding-top: 2em;
+  }
+
+  .col-lg-6.text-end.pull-left.order-lg-1 {
+    position: relative;
+  }
+
+  .col-lg-6.pull-right.order-lg-2 {
+    padding: 0 30px;
+  }
+
+  .new-perkss--place.perkss-special {
+    bottom: -2em;
+    top: auto !important;
+    max-width: 70px;
+  }
+
+  .iphone-img--slider {
+    margin: 75px auto 1em;
+  }
+
+  h2.text-white.mt-3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.01px;
+    text-align: center;
+  }
+
+  .new-slide--container {
+    gap: 10px;
   }
 }
 

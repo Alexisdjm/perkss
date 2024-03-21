@@ -53,7 +53,7 @@ const Secondary = () => {
                 <Userfirst/>
                 <MoreServices/>
                 <Testimonials/>
-                <Howitworks/>
+
                 <FAQs/>
                 <Semifooter/> 
             </main>
