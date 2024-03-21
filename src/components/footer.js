@@ -60,7 +60,7 @@ const Footer = () => {
             <div className="container d-md-flex py-4 lower-footer">
             <div className="me-md-auto text-center text-md-start">
                 <div className="copyright">
-                <p>&copy; Copyright <strong><span>Perkss</span></strong>. All Rights Reserved</p>
+                <p>&copy; 2023 Perkss. All Rights Reserved</p>
                 </div>
 
             </div>

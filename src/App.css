@@ -2823,7 +2823,7 @@ div.active {
 
 /* -------------------------------------------------------- Mobile message --------------------------------------------- */
 
-.mobile-message--container, .mobile-services {
+.mobile-message--container, .mobile-services, .cambio-mobile {
   display: none;
 }
 
@@ -2866,10 +2866,6 @@ div.active {
     right: 51%;
   }
 
-  #hero.users .download-center, #hero.users .download-center-mobile {
-    display: none;
-  }
-
   #hero.users .big-font {
     text-align: center;
     font-size: 33px;
@@ -2903,17 +2899,9 @@ div.active {
     right: 51%;
   }
 
-  #hero.users .download-center, #hero.users .download-center-mobile  {
-    display: none;
-  }
-
   #hero.users .big-font {
     text-align: center;
     font-size: 33px;
-  }
-
-  #hero.home p.hb-content {
-    display: none !important;
   }
 
   #hero.home img.bannerSI, #hero.home img.anotherBannerSI {
@@ -2935,10 +2923,6 @@ div.active {
     max-width: 270px;
     right: -70px;
     left: auto !important;
-  }
-
-  #hero.home img.heart-image--home {
-    display: none;
   }
 
   #hero.home .new-align-hb {
@@ -2966,15 +2950,14 @@ div.active {
     margin: 10px 0 !important;
   }
 
-  .btn-get-started.desktop {
-    display: none;
-  }
 
-  .btn-get-started.mobile {
+  .btn-get-started.mobile, .cambio-mobile {
     display: block;
   }
 
-  .qr-code, .row.desktop-benefits {
+  .qr-code, 
+  .row.desktop-benefits,
+  #hero.home p.hb-content {
     display: none !important;
   }
 
@@ -3030,7 +3013,16 @@ div.active {
     color: transparent;
   }
 
-  .row.desktop-benefits, .row.desktop-services {
+  .row.desktop-benefits, 
+  .row.desktop-services,
+  .btn-get-started.desktop,
+  #hero.users .download-center, 
+  #hero.users .download-center-mobile,
+  #hero.home img.heart-image--home,
+  .testimonials-slider .swiper-button-prev,
+  .testimonials-slider .swiper-button-next,
+  .cambio-desktop,
+  .footer-links {
     display: none;
   }
 
@@ -3066,10 +3058,10 @@ div.active {
   }
 
   #como .col-lg-6.pull-left.order-lg-1 p {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 25px;
-  text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;    
   }
 
   .mobile-services {
@@ -3077,8 +3069,9 @@ div.active {
     width: 90vw;
   }
 
-  .mobile-services .swiper-slide, .mobile-benefits .swiper-slide {
-    max-height: 260px;
+  .mobile-services .swiper-slide, 
+  .mobile-benefits .swiper-slide, 
+  .cambio-mobile .swiper-slide  {
     min-height: 0;
   }
 
@@ -3098,6 +3091,78 @@ div.active {
   .mobile-services .icon-box.iconbox-blue p {
     font-size: 16px;
   }
+
+  .antes #pills-tab.my-5.justify-content-center {
+    margin: 2em 0 !important;
+    flex-wrap: nowrap;
+  }
+
+  .nav-pills .nav-link.active {
+    padding: 10px 20px;
+  }
+
+  .home .swiper-pagination {
+    top: 13em;
+  }
+
+  .new-slide--container {
+    gap: 2em;
+  }
+
+  .inner-content--box {
+    gap: 0.5em;
+  }
+
+  .inner-content--box h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.38px;
+    text-align: left;
+    margin: 0;
+  }
+
+  .inner-content--box p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+  }
+
+  .content-box {
+    gap: 0;
+  }
+
+  .content-box h2 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 68.26px;
+    text-align: right;
+  }
+
+  #testimonials.antes {
+    padding: 100px 0;
+  }
+
+  .nav-pills .nav-link.active {
+    font-size: 13px;
+  }
+
+  .cambio {
+    margin-bottom: 0;
+  }
+  
+  #footer .container {
+    padding-bottom: 3em;
+  }
+
+  .copyright p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+
+  }
+
 }
 
 @media only screen and (min-width: 464px) and (max-width: 767px) {
