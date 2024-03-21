@@ -2823,7 +2823,7 @@ div.active {
 
 /* -------------------------------------------------------- Mobile message --------------------------------------------- */
 
-.mobile-message--container {
+.mobile-message--container, .mobile-services {
   display: none;
 }
 
@@ -3030,7 +3030,7 @@ div.active {
     color: transparent;
   }
 
-  .row.desktop-benefits {
+  .row.desktop-benefits, .row.desktop-services {
     display: none;
   }
 
@@ -3039,9 +3039,6 @@ div.active {
     width: clamp(280px, 90vw, 335px);
   }
 
-  .mobile-benefits .swiper {
-    max-height: 250px;
-  }
 
   .beneficios .container {
     padding: 0;
@@ -3073,7 +3070,33 @@ div.active {
   font-weight: 500;
   line-height: 25px;
   text-align: left;
+  }
 
+  .mobile-services {
+    display: block;
+    width: 90vw;
+  }
+
+  .mobile-services .swiper-slide, .mobile-benefits .swiper-slide {
+    max-height: 260px;
+    min-height: 0;
+  }
+
+  .services {
+    padding-bottom: 90px;
+  }
+
+  .mobile-services .icon-box.iconbox-blue h4 {
+    font-weight: 600;
+  }
+
+  .mobile-services .icon-box.iconbox-blue p {
+    font-weight: 500;
+  }
+
+  .mobile-services .icon-box.iconbox-blue h4, 
+  .mobile-services .icon-box.iconbox-blue p {
+    font-size: 16px;
   }
 }
 

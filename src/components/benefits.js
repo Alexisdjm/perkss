@@ -7,7 +7,6 @@ import user from "../images/img/user-men.svg"
 import magnifier from "../images/img/magnifier.svg"
 import chat from "../images/img/Chat.svg"
 
-import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 const Benefits = () => {
