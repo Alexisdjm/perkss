@@ -455,9 +455,9 @@ h6 {
 }
 
 #hero img {
-  position: relative;
+  /* position: relative; */
   z-index: 999;
-  top: 0;
+  /* top: 0; */
 }
 
 #hero h1 {
@@ -2823,23 +2823,37 @@ div.active {
 
 /* -------------------------------------------------------- Mobile message --------------------------------------------- */
 
-.mobile-message--container, .mobile-services, .cambio-mobile {
+.mobile-message--container, 
+.mobile-services, 
+.cambio-mobile, 
+.btn-get-started.mobile, 
+.right-secondary--image-mobile,
+.left-banner--img--mobile {
   display: none;
 }
 
-.btn-get-started.mobile {
-  display: none;
+.left-banner--img--mobile, 
+.left-banner--img--desktop,
+.right-secondary--image--mobile, 
+.right-secondary--image--desktop, 
+.banner-floating--img {
+  position: absolute;
 }
 
+.secondary-banner--component {
+  background: linear-gradient(235deg, #EB00FF 0.35%, #1BFFE4 110.47%);
+  position: relative;
+}
 /* -------------------------------------------------------- custom media queries -------------------------------------- */
 
 
 @media only screen and (min-width: 280px) and (max-width: 463px) {
   .img-secondary-layout {
     max-width: 460px;
-    top: 0;
+    position: absolute;
     left: -3em;
     width: 105vw;
+    bottom: 0;
   }
 
   .container.d-flex.align-items-center.justify-content-between {
@@ -2849,63 +2863,15 @@ div.active {
   #hero {
     background: linear-gradient(235deg, #EB00FF 0.35%, #1BFFE4 110.47%);
   }
-
-  #hero.users img.bannerSI {
-    position: absolute;
-    top: 32em;
-    right: 0;
-    max-width: 110vw;
-    z-index: -1;
-  }
   
   #hero.secondary-banner-height {
     max-height: 100vh !important;
     height: 100vh;
   }
-
-  #hero.users .adjust-secondary-content-width.justify-content-center {
-    top: -31rem;
-    position: relative;
-    width: 70vw;
-    right: 51%;
-  }
-
-  #hero.users .big-font {
-    text-align: center;
-    font-size: 33px;
-  }
-
-  #hero.users img.bannerSI {
-    position: absolute;
-    right: 0;
-    max-width: 400px;
-    z-index: -1;
-    bottom: -30px;
-  }
-
-#hero.users img.second-banner--image {
-  max-width: 220px;
-  position: absolute;
-  right: 13em;
-  left: auto !important;
-  top: 15em;
-}
   
   #hero.secondary-banner-height {
     max-height: 100vh !important;
     height: 100vh;
-  }
-
-  #hero.users .adjust-secondary-content-width.justify-content-center {
-    top: -32rem;
-    position: relative;
-    width: 70vw;
-    right: 51%;
-  }
-
-  #hero.users .big-font {
-    text-align: center;
-    font-size: 33px;
   }
 
   #hero.home img.bannerSI, #hero.home img.anotherBannerSI {
@@ -2955,7 +2921,10 @@ div.active {
   }
 
 
-  .btn-get-started.mobile, .cambio-mobile {
+  .btn-get-started.mobile, 
+  .cambio-mobile, 
+  .right-secondary--image-mobile,
+  .left-banner--img--mobile  {
     display: block;
   }
 
@@ -3025,7 +2994,9 @@ div.active {
   .cambio-desktop,
   .footer-links,
   .arrow-semifooter--1, 
-  .arrow-semifooter--2 {
+  .arrow-semifooter--2, 
+  .right-secondary--image--desktop,
+  .left-banner--img--desktop {
     display: none;
   }
 
@@ -3181,6 +3152,46 @@ div.active {
     margin-bottom: 1em;
   }
 
+  .secondary-banner--component {
+    height: 100vh;
+  }
+
+
+  .left-banner--img--mobile, .right-secondary--image--mobile {
+    bottom: 0;
+  }
+
+  .right-secondary--image--mobile {
+    right: 0;
+    z-index: 1;
+  }
+
+  .left-banner--img--mobile {
+    left: 0;
+    z-index: 2;
+    max-width: 99vw;
+  }
+
+  .banner-floating--img {
+    top: calc(50vh - 170px);
+    left: calc(50vw - 90px);
+  }
+
+  .secondary-banner--content-box {
+    width: clamp(270px, 80vw, 340px);
+    margin: 7em auto 0;
+  }
+
+  .secondary-banner--content {
+    font-size: 33.88px;
+    font-weight: 700;
+    line-height: 41.3px;
+    text-align: left;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    position: relative;
+    z-index: 99;
+  }
 }
 
 @media only screen and (min-width: 464px) and (max-width: 767px) {
@@ -3192,42 +3203,10 @@ div.active {
   .container.d-flex.align-items-center.justify-content-between {
     max-width: calc(100vw - 30px);
   }
-
-  #hero.users img.bannerSI {
-    position: absolute;
-    top: 23em;
-    right: 0;
-    max-width: 400px;
-    z-index: -1;
-  }
-
-#hero.users img.second-banner--image {
-  max-width: 220px;
-  position: absolute;
-  right: 13em;
-  left: auto !important;
-  top: 15em;
-}
   
   #hero.secondary-banner-height {
     max-height: 100vh !important;
     height: 100vh;
-  }
-
-  #hero.users .adjust-secondary-content-width.justify-content-center {
-    top: -23rem;
-    position: relative;
-    width: 70vw;
-    right: 44%;
-  }
-
-  #hero.users .download-center, #hero.users .download-center-mobile {
-    display: none;
-  }
-
-  #hero.users .big-font {
-    text-align: center;
-    font-size: 33px;
   }
 
   #hero.home .anotherBannerSI {
@@ -3306,6 +3285,64 @@ div.active {
     overflow: hidden;
     position: relative;
   }
+
+  
+  .secondary-banner--component {
+    height: 100vh;
+  }
+
+
+  .left-banner--img--mobile, .right-secondary--image--mobile {
+    bottom: 0;
+  }
+
+  .right-secondary--image--mobile {
+    right: 0;
+    z-index: 1;
+  }
+
+  .left-banner--img--mobile {
+    left: 0;
+    z-index: 2;
+    max-width: 99vw;
+  }
+
+  .banner-floating--img {
+    top: calc(55vh - 170px);
+    left: calc(50vw - 90px);
+  }
+
+  .secondary-banner--content-box {
+    width: clamp(270px, 80vw, 340px);
+    margin: 7em auto 0;
+  }
+
+  .secondary-banner--content {
+    font-size: 33.88px;
+    font-weight: 700;
+    line-height: 41.3px;
+    text-align: left;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    position: relative;
+    z-index: 99;
+  }
+
+  .right-secondary--image--desktop,
+  .left-banner--img--mobile {
+    display: block;
+  }
+
+  .right-secondary--image--mobile,
+  .left-banner--img--desktop,
+  .footer-links {
+    display: none;
+  }
+
+  .right-secondary--image--desktop{
+    bottom: 0;
+    right: 0;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -3315,12 +3352,6 @@ div.active {
     top: 115vw
   }
 
-  #hero.users .mobile-button--semifooter.banner {
-    display: block;
-    left: calc(50vw - 100px);
-    top: calc(95vh - 100px) !important;
-    z-index: 999;
-  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 900px) {

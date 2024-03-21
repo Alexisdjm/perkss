@@ -9,6 +9,7 @@ import MoreServices from './moreservices';
 import Howitworks from './howitworks';
 import FAQs from './FAQ';
 import Testimonials from "./testimonials"
+import SecondaryBanner from './secondaryBanner';
 
 import { useState, useEffect } from 'react'
 import CookiesConsent from './CookiesConsent/CookiesConsent';
@@ -45,16 +46,9 @@ const Secondary = () => {
         <>
             {loading ? <Loader/> : ''}
             <Header/>
-            <HeroBanner 
-                main={false}
-                register={false} 
-                inner={images.girlBanner} 
-                bannerSI={images.secondaryImageGroup} 
-                SecondBannerI={images.alternativeBannerIMG}
-                css={'adjust-secondary-content-width justify-content-center'} 
-                section={"d-flex alternative-hero secondary-banner-height users"}>
-                <FirstContent main={false} stylee={'big-font'}/>
-            </HeroBanner>
+            <SecondaryBanner>
+                <FirstContent main={false} stylee={'secondary-banner--content'}/>
+            </SecondaryBanner>
             <main id='main'>
                 <Userfirst/>
                 <MoreServices/>

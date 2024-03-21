@@ -49,6 +49,8 @@ const images = {
     semifooterVector1: require('./img/Vector 210.png'),
     semifooterVector2: require('./img/Vector 211.png'),
     heart: require('./img/Vector 218.png'),
+    mobileGuy: require('./img/Group girl present (1).png'),
+    mobileGirl: require('./img/girl and wallet (1).png')
 }
 
 export default images

@@ -25,7 +25,7 @@ const HeroBanner = ({inner, css, children, bannerSI, anotherBannerSI, SecondBann
                             </> : ""
                         }
 
-{
+                        {
                             SecondBannerI ? <>
                                 <img src={SecondBannerI} className={'second-banner--image'} alt="banner"></img>
                             </> : ""
@@ -33,7 +33,6 @@ const HeroBanner = ({inner, css, children, bannerSI, anotherBannerSI, SecondBann
 
                         <img src={images.heart} className={'heart-image--home'} alt="banner"></img>
 
-                        <a href="https://app.perkss.io/" className="mobile-button--semifooter banner">Descarga Perks</a>
                         <div className={css}>
                             {children}
                         </div>
