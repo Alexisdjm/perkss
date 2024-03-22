@@ -28,11 +28,9 @@ function Tabs() {
 
 const Testimonials = ({ activeTab, handleTabClick, object, navbuttons }) => {
 
-  console.log(object)
-
   return (
     <>
-      <section id="testimonials" className="antes">
+      <section id="testimonials" className={"antes " + object.key}>
         <div className="container scroll-reveal">
           <div className="sec-heading text-center mt-0">
             <h2 className="text-white mt-3">Cómo funciona</h2>
