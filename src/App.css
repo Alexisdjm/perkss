@@ -3240,15 +3240,6 @@ div.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%);
   }
 
-  .iphone-slider--upper-title {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19.5px;
-    text-align: center;
-    color: #35E0E7;
-    text-transform: uppercase;
-  }
-
   .button-set {
     margin-top: 20px;
   }
@@ -3478,6 +3469,15 @@ div.active {
     top: 115vw
   }
 
+  .iphone-slider--upper-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    color: #35E0E7;
+    text-transform: uppercase;
+  }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 900px) {
@@ -3622,7 +3622,8 @@ div.active {
   .desktop-services,
   .hb-content,
   .btn-get-started.desktop,
-  #hero.home .heart-image--home {
+  #hero.home .heart-image--home,
+  .arrow-semifooter--1 {
     display: none;
   }
 
@@ -3666,6 +3667,15 @@ div.active {
 
   #secondary .download-center {
     display: none;
+  }
+
+  .iphone-slider--upper-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    color: #35E0E7;
+    text-transform: uppercase;
   }
 }
 
@@ -3863,6 +3873,15 @@ div.active {
 
   #secondary .download-center {
     display: none;
+  }
+
+  .iphone-slider--upper-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    color: #35E0E7;
+    text-transform: uppercase;
   }
 }
 
@@ -4210,6 +4229,15 @@ div.active {
 
   .col-lg-4.col-md-6.d-flex.align-items-stretch {
     width: 30vw;
+  }
+
+  .iphone-slider--upper-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    color: #35E0E7;
+    text-transform: uppercase;
   }
 
 }
