@@ -32,6 +32,7 @@ const Testimonials = ({ activeTab, handleTabClick, object, navbuttons }) => {
     <>
       <section id="testimonials" className={"antes " + object.key}>
         <div className="container scroll-reveal">
+          <h5 className='iphone-slider--upper-title'>Muy fácil, mucho valor</h5>
           <div className="sec-heading text-center mt-0">
             <h2 className="text-white mt-3">Cómo funciona</h2>
           </div>
