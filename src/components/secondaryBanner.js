@@ -9,7 +9,9 @@ const SecondaryBanner = ({children}) => {
                 <img src={images.secondaryImageGroup} className="right-secondary--image--desktop" alt="right-bg"></img>
                 <img src={images.mobileGuy} className="right-secondary--image--mobile"></img>
                 <img src={images.alternativeBannerIMG} className="banner-floating--img"></img>
-                <a href="https://app.perkss.io/" className="mobile-button--semifooter banner">Descarga Perks</a>
+                <div className="download-btn--box">
+                    <a href="https://app.perkss.io/" className="mobile-button--semifooter banner">Descarga Perks</a>
+                </div>
                 <div className="secondary-banner--content-box ">
                     {children}
                 </div>

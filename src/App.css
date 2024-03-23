@@ -2651,7 +2651,7 @@ div.active {
 }
 
 #hero.home .second-banner--image {
-  bottom: -270px;
+  bottom: -300px;
   max-width: 470px;
   top: auto !important;
   position: absolute;
@@ -2788,7 +2788,6 @@ div.active {
 }
 
 .mobile-button--semifooter {
-  display: block;
   position: absolute;
   z-index: 99;
   background-color: white;
@@ -2812,7 +2811,7 @@ div.active {
 }
 
 .arrow-semifooter--2 {
-  right: calc(29vw + ((1920px - 100vw)*0.1));
+  right: calc(24vw + ((1920px - 100vw)*0.1));
 }
 
 /* -------------------------------------------------------- Mobile message --------------------------------------------- */
@@ -3463,11 +3462,6 @@ div.active {
 }
 
 @media only screen and (max-width: 767px) {
-  .mobile-button--semifooter.semifooter {
-    display: block;
-    left: calc(50vw - 100px);
-    top: 115vw
-  }
 
   .iphone-slider--upper-title {
     font-size: 16px;
@@ -3476,6 +3470,36 @@ div.active {
     text-align: center;
     color: #35E0E7;
     text-transform: uppercase;
+  }
+
+  .download-btn--box {
+    border-radius: 50px;
+    overflow: hidden;
+    position: absolute;
+    display: block;
+    height: 72.5px;
+    width: 203px;
+    padding: 1.5px 1px 1px 1.5px;
+    background: linear-gradient(235deg, #EB00FF 0.35%, #1BFFE4 110.47%);
+    bottom: 4em;
+    left: calc(50vw - 100px);
+    z-index: 999;
+  }
+  
+  .mobile-button--semifooter {
+    display: block;
+    background-color: white;
+    border-image-slice: 1;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.38px;
+    text-align: center;
+    max-width: 200px;
   }
 
 }
@@ -3927,13 +3951,16 @@ div.active {
   }
 
   .man-bg--footer {
-    max-width: 35em;
-    left: calc((100vw - 1150px)*0.6);
+    max-width: calc(27em + ((100vw)*0.08));
+    /* left: calc((100vw - 1160px)*0.7); */
+    left: -4em;
   }
   
   .woman-bg--footer {
-    max-width: 40em;
-    right: calc((100vw - 1150px)*0.7);
+    max-width: calc(30em + ((100vw)*0.08));
+    /* right: calc((100vw - 1150px)*0.9); */
+    right: -3.5em;
+
   }
 
   .pre-footer h2 {
@@ -4050,6 +4077,8 @@ div.active {
   .pre-footer h2 {
     font-size: 35px;
     font-weight: bold;
+    max-width: 53vw;
+    text-align: center;
 }
 
   .pre-footer-column {
@@ -4063,6 +4092,9 @@ div.active {
   #secondary .download-center {
     display: flex;
     justify-content: end;
+  }
+  .d-flex.align-items-stretch.mb-5.mb-lg-0 {
+    width: 20vw !important;
   }
 }
 
@@ -4201,6 +4233,10 @@ div.active {
   .arrow-semifooter--2 {
     right: calc(23vw + ((1920px - 100vw)* 0.1));
   }
+
+  .d-flex.align-items-stretch.mb-5.mb-lg-0 {
+    width: 20% !important;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -4238,6 +4274,15 @@ div.active {
     text-align: center;
     color: #35E0E7;
     text-transform: uppercase;
+  }
+
+  .row.mt-5.cambio-desktop {
+    row-gap: 30px;
+    margin: 0 auto;
+  }
+
+  .offset-lg-1.d-flex.align-items-stretch {
+    margin-left: 0 !important;
   }
 
 }
@@ -4345,6 +4390,10 @@ div.active {
 
   #hero .button-set {
     display: flex;
+  }
+
+  .d-flex.align-items-stretch.mb-5.mb-lg-0 {
+    width: 20% !important;
   }
 }
 
@@ -4569,14 +4618,14 @@ div.active {
   }
 }
 
-.mobile-button--semifooter{
+/* .mobile-button--semifooter{
   padding: 10px 30px;
   position: absolute;
   transform: translateX(-50%);
   left: 50% !important;
   bottom: 50px !important;
   top: unset !important;
-}
+} */
 
 .pre-footer-column a{
   max-width: 218px;
