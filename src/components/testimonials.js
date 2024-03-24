@@ -3,12 +3,11 @@ import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import HomeSlider from "../sliderHomeContent"
 import UsersSlider from '../sliderUsersContent'
-import images from '../images/exporting'
 
 import 'swiper/css';
 
 function Tabs() {
-  const [activeTab, setActiveTab] = useState(0); // Inicialmente, la primera pestaña estará activa
+  const [activeTab, setActiveTab] = useState(0);
 
   const handleTabClick = (tabIndex) => {
     setActiveTab(tabIndex);

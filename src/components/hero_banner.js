@@ -31,7 +31,7 @@ const HeroBanner = ({inner, css, children, bannerSI, anotherBannerSI, SecondBann
                             </> : ""
                         }
 
-                        <img src={images.heart} className={'heart-image--home'} alt="banner"></img>
+                        <img src={images.heart2} className={'heart-image--home'} alt="banner"></img>
 
                         <div className={css}>
                             {children}
