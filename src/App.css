@@ -3475,7 +3475,7 @@ div.active {
   .download-btn--box {
     border-radius: 50px;
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     display: block;
     height: 72.5px;
     width: 203px;
@@ -4260,7 +4260,7 @@ div.active {
 
   .row.desktop-services {
     display:  grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 33%);
   }
 
   .col-lg-4.col-md-6.d-flex.align-items-stretch {
