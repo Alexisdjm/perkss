@@ -4395,6 +4395,10 @@ div.active {
   .d-flex.align-items-stretch.mb-5.mb-lg-0 {
     width: 20% !important;
   }
+
+  #user-first.como {
+    padding-bottom: 60px;
+  }
 }
 
 @media only screen and (min-width: 1281px) and (max-width: 1440px) {
@@ -4617,15 +4621,6 @@ div.active {
     width: 400px;
   }
 }
-
-/* .mobile-button--semifooter{
-  padding: 10px 30px;
-  position: absolute;
-  transform: translateX(-50%);
-  left: 50% !important;
-  bottom: 50px !important;
-  top: unset !important;
-} */
 
 .pre-footer-column a{
   max-width: 218px;

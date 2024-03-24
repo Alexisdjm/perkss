@@ -17,9 +17,9 @@ function Tabs() {
   return (
     <div>
       <Testimonials 
-      object={window.location.pathname === '/' ? HomeSlider : UsersSlider } 
+      object={window.location.pathname === '/' ? UsersSlider : HomeSlider } 
       activeTab={activeTab} 
-      navbuttons={window.location.pathname === '/' ? true : false }
+      navbuttons={window.location.pathname === '/' ? false : true }
       handleTabClick={handleTabClick} />
     </div>
   );

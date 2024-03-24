@@ -7,19 +7,17 @@ import '../css/vendor/glightbox/css/glightbox.min.css'
 import '../css/vendor/remixicon/remixicon.css'
 import '../css/vendor/swiper/swiper-bundle.min.css'
 
-import images from '../images/exporting'
 import Header from './Header';
-import HeroBanner from './hero_banner';
-import Benefits from './benefits';
-import Como from './como';
-import Services from './services';
-import Testimonials from './testimonials';
-import Blockchain from './blockchain';
-import Cambio from './cambio';
 import Semifooter from './semifooter';
 import Footer from './footer';
+import images from '../images/exporting';
 import FirstContent from './heroFirstContent';
-import MobileMessage from './mobileMessage'
+import Userfirst from './userfirst';
+import MoreServices from './moreservices';
+import Howitworks from './howitworks';
+import FAQs from './FAQ';
+import Testimonials from "./testimonials"
+import SecondaryBanner from './secondaryBanner';
 
 import { useState, useEffect } from 'react'
 import CookiesConsent from './CookiesConsent/CookiesConsent'
@@ -54,30 +52,20 @@ const Home = () => {
 
     return(
         <>
-            {loading ? <Loader/> : ''}
+             {loading ? <Loader/> : ''}
             <Header/>
-            <HeroBanner 
-            register={true}
-            css={'new-align-hb'}
-            bannerSI={images.bannerBG2} 
-            SecondBannerI={images.bannerBG3}
-            anotherBannerSI={images.bannerBG1}
-            section={"simple-flex section-height adjust-bg home"} 
-            >
-                <FirstContent main={true} stylee={'medium-font new-hb-align'}/>
-            </HeroBanner>
+            <SecondaryBanner>
+                <FirstContent main={false} stylee={'secondary-banner--content'}/>
+            </SecondaryBanner>
             <main id='main'>
-                <MobileMessage/>
-                <Benefits/>
-                <Como/>
-                <Services/>
+                <Userfirst/>
+                <MoreServices/>
                 <Testimonials/>
-                <Blockchain/>
-                <Cambio/>
-                <Semifooter appButtons={false}/> 
+                <FAQs/>
+                <Semifooter/> 
             </main>
             <Footer/>
-            <a href="#"className={!scroll ? "back-to-top d-flex align-items-center justify-content-center" : 'back-to-top d-flex align-items-center justify-content-center scroll-active'}><i className="bi bi-arrow-up-short"></i></a>
+            <a href="#" className={!scroll ? "back-to-top d-flex align-items-center justify-content-center" : 'back-to-top d-flex align-items-center justify-content-center scroll-active'}><i className="bi bi-arrow-up-short"></i></a>
             <CookiesConsent/>
         </>
     )
