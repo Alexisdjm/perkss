@@ -1,6 +1,8 @@
 import images from "../images/exporting"
 
 const SecondaryBanner = ({children}) => {
+
+
     return <>
         <section id="secondary" className="secondary-banner--component">
             <div>
@@ -9,9 +11,6 @@ const SecondaryBanner = ({children}) => {
                 <img src={images.secondaryImageGroup} className="right-secondary--image--desktop" alt="right-bg"></img>
                 <img src={images.mobileGuy} className="right-secondary--image--mobile" alt="mobile guy"></img>
                 <img src={images.alternativeBannerIMG} className="banner-floating--img" alt="another banner"></img>
-                <div className="download-btn--box">
-                    <a href="https://app.perkss.io/" className="mobile-button--semifooter banner">Descarga Perks</a>
-                </div>
                 <div className="secondary-banner--content-box ">
                     {children}
                 </div>
