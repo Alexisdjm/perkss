@@ -17,7 +17,7 @@ const Header = () => {
                     
                     <ul>
                     <li><Link to='/' className='nav-link scrollto active'>Home</Link></li>
-                    <li><Link to='/usuarios' className='nav-link scrollto'>Usuarios</Link></li>
+                    <li><Link to='/usuarios' className='nav-link scrollto'>Marcas</Link></li>
                     <li><a className="nav-link scrollto" href="https://medium.com/@eduardo_30817/unlocking-the-power-of-brand-loyalty-with-web3-f07300531e49">Blog</a></li>
                     <li><a className="nav-link mobile-only" href="https://app.perkss.io/auth/login">Iniciar sesión</a></li>
                     <li><a className="nav-link mobile-only" href="https://app.perkss.io/auth/signup">Registro</a></li>

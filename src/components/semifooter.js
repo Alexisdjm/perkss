@@ -49,7 +49,7 @@ const Semifooter = ({appButtons}) => {
                         <img src={images.qrimg} alt="qr" loading="lazy" className="qr-code"></img>
                     }
                     <div style={window.location.pathname === '/' ? {position: botonPosition} : {position: "absolute"}} className="download-btn--box">
-                        <a href="https://app.perkss.io/" className="mobile-button--semifooter banner">Descarga Perks</a>
+                        <a href="https://app.perkss.io/" className="mobile-button--semifooter banner">Descarga Perkss</a>
                     </div>
                     <img src={images.semifooterVector1} className="arrow-semifooter--1" alt="arrow 1"></img>
                     <img src={images.semifooterVector2} className="arrow-semifooter--2" alt="arrow 2"></img>
