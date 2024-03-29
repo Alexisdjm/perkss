@@ -3505,6 +3505,12 @@ div.active {
 
 }
 
+@media only screen and (min-width: 768px) {
+  .mobile-benefits {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 900px) {
   .container.d-flex.align-items-center.justify-content-between {
     max-width: calc(100vw - 40px);
