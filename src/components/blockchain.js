@@ -3,14 +3,14 @@ import blockchain from '../images/img/perkss-blockchain.svg'
 const Blockchain = () => {
     return(
         <>
-            <section id="como" className="como">
+            <section id="como" className="como blockchain">
                 <div className="container">
 
                     <div className="row align-items-center scroll-reveal">
                         <div className="col-lg-6 pull-left order-lg-1">
                             <div className="sec-heading">
                                 <h5>La mejor infraestructura</h5>
-                                <h2>Impulsados por Blockchain y IA</h2>
+                                <h2>Impulsados por Blockchain e IA</h2>
                             </div>
 
                             <p>En Perkss, fusionamos Blockchain y la IA para superar los retos de fidelización y adquisición de clientes actuales.</p>

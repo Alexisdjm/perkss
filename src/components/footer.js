@@ -28,7 +28,7 @@ const Footer = () => {
                     <h4>Empresa</h4>
                     <ul>
                         <li> <a href="/">Home</a></li>
-                        <li> <Link to="/usuarios">Usuarios</Link></li>
+                        <li> <Link to="/usuarios">marcas</Link></li>
                         <li> <a href="https://medium.com/@eduardo_30817/unlocking-the-power-of-brand-loyalty-with-web3-f07300531e49">Blog</a></li>
                     </ul>
                 </div>

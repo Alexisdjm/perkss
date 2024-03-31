@@ -3049,6 +3049,8 @@ section.antes.home .new-slide--container {
 
   .beneficios .sec-heading h5, #user-first .col-lg-6.pull-right.order-lg-2 p {
     font-size: 18.33px;
+    font-weight: 500;
+    line-height: 25px;
   }
 
   .mobile-benefits .title {
@@ -3059,7 +3061,18 @@ section.antes.home .new-slide--container {
     padding: 0 30px;
   }
 
+  #como.blockchain .col-lg-6.pull-left.order-lg-1 {
+    padding: 0 35px;
+  }
+
   #como .col-lg-6.pull-left.order-lg-1 p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;    
+  }
+
+  #como.blockchain .col-lg-6.pull-left.order-lg-1 p {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
