@@ -3276,6 +3276,10 @@ section.antes.home .new-slide--container {
   .button-set {
     margin-top: 20px;
   }
+
+  #services .text-center.sec-heading.mb-5 {
+    margin-bottom: 20px !important;
+  }
 }
 
 @media only screen and (min-width: 464px) and (max-width: 767px) {
