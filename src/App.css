@@ -2869,10 +2869,38 @@ section.antes.home .new-slide--container {
 .adquisition-css-class {
   max-width: 100%;
 }
+
+#services.services.gain-eur {
+  position: relative;
+}
+
+.decor-plane {
+  position: absolute;
+  z-index: 999;
+  bottom: -1.2em;
+}
+
+#como.new-como .sec-heading {
+  margin-top: 40px;
+}
+
+#como.new-como .img-fluid {
+  max-width: 517px;  
+}
 /* -------------------------------------------------------- custom media queries -------------------------------------- */
 
+@media only screen and (max-width: 280px) {
+  .decor-plane {
+    width: 65vw;
+    position: absolute;
+    z-index: 999;
+    bottom: -4.2em;
+    left: -2em;
+    transform: rotate(352deg);
+  }
+}
 
-@media only screen and (min-width: 280px) and (max-width: 463px) {
+@media only screen and (min-width: 281px) and (max-width: 463px) {
   .img-secondary-layout {
     max-width: 460px;
     position: absolute;
@@ -3280,6 +3308,15 @@ section.antes.home .new-slide--container {
   #services .text-center.sec-heading.mb-5 {
     margin-bottom: 20px !important;
   }
+
+  .decor-plane {
+    width: 65vw;
+    position: absolute;
+    z-index: 999;
+    bottom: -4.2em;
+    left: -2em;
+    transform: rotate(352deg);
+  }
 }
 
 @media only screen and (min-width: 464px) and (max-width: 767px) {
@@ -3495,6 +3532,15 @@ section.antes.home .new-slide--container {
 
   #testimonials.antes.home {
     padding-bottom: 110px;
+  }
+
+  .decor-plane {
+    width: 45vw;
+    position: absolute;
+    z-index: 999;
+    bottom: -4.2em;
+    left: -2em;
+    transform: rotate(352deg);
   }
   
 }
@@ -3749,6 +3795,15 @@ section.antes.home .new-slide--container {
     color: #35E0E7;
     text-transform: uppercase;
   }
+
+  .decor-plane {
+    width: 45vw;
+    position: absolute;
+    z-index: 999;
+    bottom: -4.2em;
+    left: -2em;
+    transform: rotate(352deg);
+  }
 }
 
 @media only screen and (min-width: 901px) and (max-width: 1023px) {
@@ -3954,6 +4009,15 @@ section.antes.home .new-slide--container {
     text-align: center;
     color: #35E0E7;
     text-transform: uppercase;
+  }
+
+  .decor-plane {
+    width: 37.5vw;
+    position: absolute;
+    z-index: 999;
+    bottom: -4.2em;
+    left: -2em;
+    transform: rotate(352deg);
   }
 }
 
@@ -4181,6 +4245,15 @@ section.antes.home .new-slide--container {
   .swiper-button-next {
     right: 15vw !important;
   }
+
+  .decor-plane {
+    width: 30vw;
+    position: absolute;
+    z-index: 999;
+    bottom: -4.2em;
+    left: -2em;
+    transform: rotate(352deg);
+  }
 }
 
 @media only screen and (min-width: 1151px) and (max-width: 1280px) {
@@ -4316,6 +4389,15 @@ section.antes.home .new-slide--container {
     max-width: 250px;
     left: calc(23vw + ((100vw - 1151px)*0.5));
     top: -2em;
+  }
+
+  .decor-plane {
+    width: 25vw;
+    position: absolute;
+    z-index: 999;
+    bottom: -4.2em;
+    left: -2em;
+    transform: rotate(352deg);
   }
 }
 
@@ -4519,6 +4601,15 @@ section.antes.home .new-slide--container {
   .secondary-banner--content {
     font-size: 49px;
   }
+
+  .decor-plane {
+    width: 25vw;
+    position: absolute;
+    z-index: 999;
+    bottom: -4.2em;
+    left: -2em;
+    transform: rotate(352deg);
+  }
 }
 
 @media only screen and (min-width: 1366px) and (max-width: 1600px) {
@@ -4540,6 +4631,16 @@ section.antes.home .new-slide--container {
     width: 16vw;
     max-width: 250px;
     left: 28vw;
+  }
+
+  .decor-plane {
+    width: 24vw;
+    max-width: 350px;
+    position: absolute;
+    z-index: 999;
+    bottom: -5.2em;
+    left: -2em;
+    transform: rotate(352deg);
   }
 }
 
@@ -4570,7 +4671,16 @@ section.antes.home .new-slide--container {
 
   .qr-code {
     width: calc(250px + ((100vw - 1600px)*0.5));
-    max-width: 400px;
+    max-width: 250px;
+  }
+
+  .decor-plane {
+    width: 370px;
+    position: absolute;
+    z-index: 999;
+    bottom: -6.2em;
+    left: 0em;
+    transform: rotate(352deg);
   }
 }
 

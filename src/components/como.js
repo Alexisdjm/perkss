@@ -3,10 +3,10 @@ import images from "../images/exporting"
 const Como = () => {
     return(
         <>
-            <section id="como" className="como">
+            <section id="como" className="como new-como">
                 <div className="container">
 
-                    <div className="row align-items-center scroll-reveal">
+                    <div className="row scroll-reveal">
                     <div className="col-lg-6 text-end pull-right order-lg-2">
                         <img src={images.banner2} className="img-fluid" alt="Perkss app" loading="lazy"></img>
                     </div>
