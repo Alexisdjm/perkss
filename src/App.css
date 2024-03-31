@@ -4574,6 +4574,10 @@ section.antes.home .new-slide--container {
     padding: 0;
     margin-top: -15px;
   }
+
+  #como.new-como .container {
+    max-width: 1230px;
+  }
 }
 
 @media only screen and (min-width: 1281px) and (max-width: 1365px) {

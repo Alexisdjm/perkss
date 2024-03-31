@@ -15,6 +15,7 @@ const Blockchain = () => {
 
                             <p>En Perkss, fusionamos Blockchain y la IA para superar los retos de fidelización y adquisición de clientes actuales.</p>
                             <p>La Blockchain nos permite ofrecer programas de fidelidad transparentes e interoperables, mientras que gracias a la IA personalizamos la experiencia de cada cliente y optimizamos las campañas de marketing.</p>
+                            <p>Esta sinergia tecnológica se traduce en la mejor experiencia posible para tus clientes y en soluciones de fidelización altamente efectivas y personalizadas para ti. Con Perkss, la ROASvolución está a tu alcance.</p>
                             <p>
                                 Lo mejor, ni tú ni tus clientes sabrán que estarán interactuando con estas tecnologías. Garantizamos una experiencia de consumidor del más alto nivel.
                             </p>
