@@ -2649,7 +2649,6 @@ div.active {
 }
 
 #hero.home img.bannerSI {
-  height: 100vh;
   bottom: 0;
   top: auto !important;
 }
@@ -2670,7 +2669,6 @@ div.active {
 }
 
 #hero .anotherBannerSI {
-  height: 100vh;
   bottom: 0;
   top: auto !important;
   position: absolute;
@@ -2901,23 +2899,20 @@ section.antes.home .new-slide--container {
     height: 100vh;
   }
 
-  #hero.home img.bannerSI, #hero.home img.anotherBannerSI {
-    bottom: -30px;
-  }
-
   #hero.home img.bannerSI {
     z-index: 10;
-    max-width: 350px;
+    height: 50vh;
+    right: -1em;
   }
 
   #hero.home img.anotherBannerSI {
     z-index: 9;
-    max-width: 450px;
+    height: 55vh;
   }
 
   #hero.home img.second-banner--image {
-    bottom: 200px;
-    max-width: 270px;
+    bottom: calc(200px + ((100vh - 667px)*0.4));
+    max-width: 290px;
     right: -70px;
     left: auto !important;
   }
@@ -3109,7 +3104,7 @@ section.antes.home .new-slide--container {
   }
 
   .home .swiper-pagination {
-    top: 13em;
+    top: 15em;
   }
 
   .new-slide--container {
@@ -3118,7 +3113,7 @@ section.antes.home .new-slide--container {
 
   .inner-content--box {
     gap: 0.5em;
-    max-width: 53vw;
+    max-width: 60vw;
   }
 
   .inner-content--box h3 {
@@ -3526,6 +3521,10 @@ section.antes.home .new-slide--container {
     line-height: 24.38px;
     text-align: center;
     max-width: 200px;
+  }
+
+  .new-slide--container.adquisition {
+    max-width: 80vw;
   }
 
 }
@@ -3941,6 +3940,13 @@ section.antes.home .new-slide--container {
   }
 }
 
+@media only screen and (max-width: 1023px) {
+  .swiper-button-prev, .swiper-button-next {
+    display: none;
+  }
+
+}
+
 @media only screen and (min-width: 1024px) and (max-width: 1150px) {
   .adjust-secondary-content-width.justify-content-center {
     position: relative;
@@ -4066,8 +4072,6 @@ section.antes.home .new-slide--container {
   .right-secondary--image--mobile,
   .left-banner--img--mobile,
   .footer-links,
-  .swiper-button-next,
-  .swiper-button-prev,
   .desktop-services,
   .btn-get-started.mobile,
   .arrow-semifooter--1,
@@ -4151,6 +4155,14 @@ section.antes.home .new-slide--container {
     max-width: 250px;
     left: calc(23vw + ((100vw - 1151px)*0.5));
     top: -2em;
+  }
+
+  .swiper-button-prev {
+    left: 15% !important;
+  }
+
+  .swiper-button-next {
+    right: 15vw !important;
   }
 }
 
@@ -4334,6 +4346,14 @@ section.antes.home .new-slide--container {
 
   .offset-lg-1.d-flex.align-items-stretch {
     margin-left: 0 !important;
+  }
+  
+  #hero.home img.bannerSI {
+    height: 100vh;
+  }
+
+  #hero.home img.anotherBannerSI {
+    height: 100vh;
   }
 
 }

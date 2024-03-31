@@ -156,7 +156,7 @@ const Testimonials = ({ activeTab, handleTabClick, object, navbuttons }) => {
                             onSwiper={(swiper) => console.log(swiper)}
                             >
                                 <SwiperSlide>
-                                  <div className='new-slide--container'>
+                                  <div className='new-slide--container adquisition'>
                                     <div className='adquisition-imgs-container'>
                                       <img alt='slide' className={object.adquisition.css} src={object.adquisition.first.img}></img>
                                       <img alt='iphone' className='secondary-iphone--img' src={object.adquisition.first.img2}></img>
@@ -170,7 +170,7 @@ const Testimonials = ({ activeTab, handleTabClick, object, navbuttons }) => {
                                   </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                  <div className='new-slide--container'>
+                                  <div className='new-slide--container adquisition'>
                                     <div className='adquisition-imgs-container'>
                                       <img alt='slide' className={object.adquisition.css} src={object.adquisition.second.img}></img>
                                       <img alt='iphone' className='secondary-iphone--img' src={object.adquisition.second.img2}></img>
@@ -184,7 +184,7 @@ const Testimonials = ({ activeTab, handleTabClick, object, navbuttons }) => {
                                   </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                  <div className='new-slide--container'>
+                                  <div className='new-slide--container adquisition'>
                                     <div className='adquisition-imgs-container'>
                                       <img alt='slide' className={object.adquisition.css} src={object.adquisition.third.img}></img>
                                       <img alt='iphone' className='secondary-iphone--img' src={object.adquisition.third.img2}></img>
@@ -198,7 +198,7 @@ const Testimonials = ({ activeTab, handleTabClick, object, navbuttons }) => {
                                   </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                  <div className='new-slide--container'>
+                                  <div className='new-slide--container adquisition'>
                                     <img alt='slide' className={object.adquisition.css} src={object.adquisition.forth.img}></img>
                                     <div className='content-box'>
                                       <h2>4</h2>
