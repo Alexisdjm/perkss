@@ -22,6 +22,28 @@ const HomeSlider = {
         img: images.tabletSlide4,
         title: "Analiza, optimiza y personaliza",
         content: "Analiza, optimiza y personaliza objetivos y recompensas."
+    },
+    adquisition: {
+        css: 'adquisition-css-class',
+        first: {
+            img: images.adquisitionTablet1,
+            img2: images.iphone12_2,
+            title: "Crea productos y/o sube contenido",
+        },
+        second: {
+            img: images.adquisitionTablet2,
+            img2: images.iphone12_3,
+            title: "Crea audiencias hiper segmentadas",
+        },
+        third: {
+            img: images.adquisitionTablet3,
+            img2: images.iphone12_1,
+            title: "Configura y lanza campañas",
+        },
+        forth: {
+            img: images.tabletSlide4,
+            title: "Analiza, optimiza y personaliza ofertas y publicaciones",
+        }
     }
 }
 

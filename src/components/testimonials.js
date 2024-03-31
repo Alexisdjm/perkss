@@ -156,28 +156,57 @@ const Testimonials = ({ activeTab, handleTabClick, object, navbuttons }) => {
                             onSwiper={(swiper) => console.log(swiper)}
                             >
                                 <SwiperSlide>
-                                    <div className="testimonial-item">
-                                        <h2>1</h2>
-                                        <p>Crea productos y/o sube contenido.</p>
+                                  <div className='new-slide--container'>
+                                    <div className='adquisition-imgs-container'>
+                                      <img alt='slide' className={object.adquisition.css} src={object.adquisition.first.img}></img>
+                                      <img alt='iphone' className='secondary-iphone--img' src={object.adquisition.first.img2}></img>
                                     </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="testimonial-item">
-                                        <h2>2</h2>
-                                        <p>Crea audiencias hiper segmentadas.</p>
+                                    <div className='content-box'>
+                                      <h2>1</h2>
+                                      <div className='inner-content--box'>
+                                        <h3>{object.adquisition.first.title}</h3>
+                                      </div>
                                     </div>
+                                  </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                <div className="testimonial-item">
-                                    <h2>3</h2>
-                                    <p>Configura y lanza campañas.</p>
-                                </div>
+                                  <div className='new-slide--container'>
+                                    <div className='adquisition-imgs-container'>
+                                      <img alt='slide' className={object.adquisition.css} src={object.adquisition.second.img}></img>
+                                      <img alt='iphone' className='secondary-iphone--img' src={object.adquisition.second.img2}></img>
+                                    </div>
+                                    <div className='content-box'>
+                                      <h2>2</h2>
+                                      <div className='inner-content--box'>
+                                        <h3>{object.adquisition.second.title}</h3>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                <div className="testimonial-item">
-                                    <h2>4</h2>
-                                    <p>Analiza, optimiza y personaliza ofertas y publicaciones.</p>
-                                </div>
+                                  <div className='new-slide--container'>
+                                    <div className='adquisition-imgs-container'>
+                                      <img alt='slide' className={object.adquisition.css} src={object.adquisition.third.img}></img>
+                                      <img alt='iphone' className='secondary-iphone--img' src={object.adquisition.third.img2}></img>
+                                    </div>
+                                    <div className='content-box'>
+                                      <h2>3</h2>
+                                      <div className='inner-content--box'>
+                                        <h3>{object.adquisition.third.title}</h3>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                  <div className='new-slide--container'>
+                                    <img alt='slide' className={object.adquisition.css} src={object.adquisition.forth.img}></img>
+                                    <div className='content-box'>
+                                      <h2>4</h2>
+                                      <div className='inner-content--box'>
+                                        <h3>{object.adquisition.forth.title}</h3>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </SwiperSlide>
                             </Swiper>
                         </div>
