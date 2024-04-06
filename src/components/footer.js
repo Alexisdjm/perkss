@@ -28,7 +28,7 @@ const Footer = () => {
                     <h4>Empresa</h4>
                     <ul>
                         <li> <a href="/">Home</a></li>
-                        <li> <Link to="/usuarios">marcas</Link></li>
+                        <li> <Link to="/usuarios">Marcas</Link></li>
                         <li> <a href="https://medium.com/@eduardo_30817/unlocking-the-power-of-brand-loyalty-with-web3-f07300531e49">Blog</a></li>
                     </ul>
                 </div>
@@ -45,7 +45,7 @@ const Footer = () => {
                 <div className="col-lg-2 offset-lg-1 col-md-6 footer-links">
                     <h4>Contacto</h4>
                     <ul>
-                        <li> <a href="mailto:Support@perkss.io">Support@perkss.io</a></li>
+                        <li> <a href="mailto:Support@perkss.io">support@perkss.io</a></li>
                         <li> <a href="tel:+34656961823">+34 656 96 18 23</a></li>
                     </ul>
                 </div>  

@@ -13,7 +13,7 @@ const Cambio = () => {
                     <div className="boxes">
                     <div className="sec-heading text-center mb-5">
                         <h5>Un cambio de paradigma</h5>
-                        <h2>Una plataforma diferente para resolver <br></br> los verdaderos problemas de los retailers</h2>
+                        <h2>Una plataforma diferente para resolver los verdaderos problemas de los retailers</h2>
                     </div>
 
                     <div className="row mt-5 cambio-desktop">

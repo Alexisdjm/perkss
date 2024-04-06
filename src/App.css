@@ -2402,7 +2402,7 @@ section#services{
 }
 
 #faqs{
-  background-image: url(images/img/triangle-bg.svg);
+  background-color: #FAFBFF;
   background-size: cover;
   padding-top: 180px;
 }
@@ -2581,8 +2581,9 @@ div.accordion-content {
 }
 
 div.active { 
+  max-height: fit-content !important;
   margin: 0;
-  padding-top: 26px;
+  padding-top: 15px;
   font-size: 16px;
 }
 
@@ -2857,17 +2858,18 @@ section.antes.home .new-slide--container {
 .adquisition-imgs-container {
   position: relative;
   max-width: 500px;
+  min-height: 290px;
 }
 
 .secondary-iphone--img {
   position: absolute;
-  right: -10%;
-  top: 2em;
-  height: 100%;
+  right: -5%;
+  top: 1.5em;
+  height: 80%;
 }
 
 .adquisition-css-class {
-  max-width: 100%;
+  max-width: 90%;
 }
 
 #services.services.gain-eur {
@@ -3045,8 +3047,6 @@ section.antes.home .new-slide--container {
   #hero.users .download-center, 
   #hero.users .download-center-mobile,
   #hero.home img.heart-image--home,
-  .testimonials-slider .swiper-button-prev,
-  .testimonials-slider .swiper-button-next,
   .cambio-desktop,
   .footer-links,
   .arrow-semifooter--1, 
@@ -3282,7 +3282,7 @@ section.antes.home .new-slide--container {
   }
 
   .iphone-img--slider {
-    margin: 75px auto 1em;
+    margin: 1em auto;
   }
 
   h2.text-white.mt-3 {
@@ -3462,8 +3462,6 @@ section.antes.home .new-slide--container {
   .right-secondary--image--mobile,
   .left-banner--img--desktop,
   .footer-links,
-  .swiper-button-next,
-  .swiper-button-prev,
   .desktop-services,
   .hb-content,
   #hero.home .heart-image--home,
@@ -3565,9 +3563,13 @@ section.antes.home .new-slide--container {
     width: 203px;
     padding: 1.5px 1px 1px 1.5px;
     background: linear-gradient(235deg, #EB00FF 0.35%, #1BFFE4 110.47%);
-    bottom: 3vh;
+    bottom: 13vh;
     left: calc(50vw - 100px);
-    z-index: 999;
+    z-index: 1000;
+  }
+
+  #semifooter .download-btn--box {
+    bottom: 7vh !important;
   }
   
   .mobile-button--semifooter {
@@ -3588,6 +3590,40 @@ section.antes.home .new-slide--container {
 
   .new-slide--container.adquisition {
     max-width: 80vw;
+  }
+
+  #como.new-como .img-fluid {
+    max-width: 85vw;
+  }
+
+  section.antes.home .new-slide--container {
+    margin-top: 1em;
+  }
+
+  .cambio .sec-heading.text-center.mb-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cambio .sec-heading h2 {
+    max-width: 85%;
+  }
+
+  #testimonials.antes.home  .tab--0{
+    min-height: 528px;
+  }
+
+  .img-fluid.lefty {
+    position: relative;
+    left: -0.6em;
+  }
+
+  .testimonials-slider .swiper-button-prev {
+    left: 5vw;
+  }
+  .testimonials-slider .swiper-button-next {
+    right: 5vw;
   }
 
 }
@@ -3735,8 +3771,6 @@ section.antes.home .new-slide--container {
   .right-secondary--image--mobile,
   .left-banner--img--mobile,
   .footer-links,
-  .swiper-button-next,
-  .swiper-button-prev,
   .desktop-services,
   .hb-content,
   .btn-get-started.desktop,
@@ -3773,6 +3807,7 @@ section.antes.home .new-slide--container {
   .pre-footer h2 {
     font-size: 35px;
     font-weight: bold;
+    max-width: 60vw;
 }
 
   .pre-footer-column {
@@ -3803,6 +3838,13 @@ section.antes.home .new-slide--container {
     bottom: -4.2em;
     left: -2em;
     transform: rotate(352deg);
+  }
+
+  .testimonials-slider .swiper-button-prev {
+    left: 5vw;
+  }
+  .testimonials-slider .swiper-button-next {
+    right: 5vw;
   }
 }
 
@@ -3951,8 +3993,6 @@ section.antes.home .new-slide--container {
   .right-secondary--image--mobile,
   .left-banner--img--mobile,
   .footer-links,
-  .swiper-button-next,
-  .swiper-button-prev,
   .desktop-services,
   .hb-content,
   .btn-get-started.desktop,
@@ -4019,13 +4059,28 @@ section.antes.home .new-slide--container {
     left: -2em;
     transform: rotate(352deg);
   }
+
+  .testimonials-slider .swiper-button-prev {
+    left: 5vw;
+  }
+  .testimonials-slider .swiper-button-next {
+    right: 5vw;
+  }
 }
 
-@media only screen and (max-width: 1023px) {
-  .swiper-button-prev, .swiper-button-next {
-    display: none;
+@media only screen and (min-width: 1024px) and (min-height: 1365px) {
+
+  .secondary-banner--component {
+    height: 55vh !important;
   }
 
+  .left-banner--img--desktop {
+    max-height: 612px;
+  }
+
+  .right-secondary--image--desktop {
+    max-height: 540px;
+  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1150px) {
@@ -4448,11 +4503,11 @@ section.antes.home .new-slide--container {
   }
   
   #hero.home img.bannerSI {
-    height: 100vh;
+    height: 85vh;
   }
 
   #hero.home img.anotherBannerSI {
-    height: 100vh;
+    height: 85vh;
   }
 
 }
@@ -4497,7 +4552,7 @@ section.antes.home .new-slide--container {
   }
 
   .secondary-banner--component {
-    height: 85vh;
+    height: 100vh;
   }
 
   .right-secondary--image--desktop,
@@ -4543,6 +4598,7 @@ section.antes.home .new-slide--container {
 
   .pre-footer-column {
     align-items: flex-start;
+    max-width: 500px;
   }
 
   #como.como .img-fluid {
@@ -4618,23 +4674,23 @@ section.antes.home .new-slide--container {
 
 @media only screen and (min-width: 1366px) and (max-width: 1600px) {
   .left-banner--img--desktop {
-    height: 82.5vh !important;
+    height: 92.5vh !important;
   }
 
   .right-secondary--image--desktop {
-    height: 70vh !important;
+    height: 80vh !important;
   }
 
   .secondary-banner--content-box  {
     position: absolute;
-    bottom: 12.5vh;
-    left: calc(50vw - 100px);
+    bottom: 16.5vh;
+    left: calc(50vw - 115px);
   }
 
   .banner-floating--img {
-    width: 16vw;
-    max-width: 250px;
-    left: 28vw;
+    width: 20vw;
+    max-width: 260px;
+    left: 29vw;
   }
 
   .decor-plane {
@@ -4650,20 +4706,20 @@ section.antes.home .new-slide--container {
 
 @media only screen and (min-width: 1601px) {
   .left-banner--img--desktop {
-    height: 82.5vh !important;
+    height: 87.5vh !important;
   }
 
   .secondary-banner--content {
-    font-size: 54px;
+    font-size: 55px;
   }
 
   .right-secondary--image--desktop {
-    height: 70vh !important;
+    height: 77vh !important;
   }
 
   .secondary-banner--content-box  {
     position: absolute;
-    bottom: 17vh;
+    bottom: 25vh;
     left: calc(45vw - ((1920px - 100vw)*0.1) - ((100vw - 1600px)*0.2));
   }
 

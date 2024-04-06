@@ -14,7 +14,7 @@ function Tabs() {
   };
 
   return (
-    <div>
+    <div style={{backgroundColor: '#FAFBFF'}}>
       <Testimonials 
       object={window.location.pathname === '/' ? UsersSlider : HomeSlider } 
       activeTab={activeTab} 
@@ -57,7 +57,7 @@ const Testimonials = ({ activeTab, handleTabClick, object, navbuttons }) => {
             </> : ""
           }
 
-          <div className="tab-content">
+          <div className="tab-content tab--0">
             {activeTab === 0 && 
             <div className="tab-content" id="pills-tabContent">
                 <div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
@@ -142,7 +142,7 @@ const Testimonials = ({ activeTab, handleTabClick, object, navbuttons }) => {
                 </div>
             </div>}
             {activeTab === 1 &&
-                <div className="tab-content" id="pills-tabContent">
+                <div className="tab-content tab--1" id="pills-tabContent">
                     <div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                         <div className="testimonials-slider-two swiper">
                             <Swiper

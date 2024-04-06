@@ -10,7 +10,7 @@ const Userfirst = () => {
                     <div className="row align-items-center">
                     <div className="col-lg-6 text-end pull-left order-lg-1">
                         <img src={svg} alt='svg' className='perkss-special new-perkss--place'></img>
-                        <img src={images.iphone} className="img-fluid" alt="Perkss app" loading="lazy"></img>
+                        <img src={images.iphone} className="img-fluid lefty" alt="Perkss app" loading="lazy"></img>
                         </div>
                         <div className="col-lg-6 pull-right order-lg-2">
                             <div className="sec-heading">

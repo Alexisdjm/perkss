@@ -6,8 +6,8 @@ const Semifooter = ({appButtons}) => {
         <>
             <section id="semifooter" className="pre-footer scroll-reveal pre-footer-banner">
                 <div className="pre-footer-column">
-                    <h5>Redefine las reglas</h5>
-                    <h2>¿Estás listo para transformar<br></br> la fidelización de tus clientes?</h2>
+                    <h5> Estamos para ti, shopper del futuro</h5>
+                    <h2>Conecta, apoya y gana en tus marcas favoritas. </h2>
                     <div className="download-center">
                     {
                     appButtons ? <>
