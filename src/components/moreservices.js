@@ -7,6 +7,7 @@ import heart from '../images/img/heart.svg'
 import images from '../images/exporting'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
 
 const MoreServices = () => {
     return(
@@ -73,9 +74,11 @@ const MoreServices = () => {
               </div>
               <div className='mobile-services'>
                 <Swiper
+                    modules={[Navigation]}
                     spaceBetween={50}
-                    slidesPerView={1}                                   
+                    slidesPerView={1}
                     loop={true}
+                    navigation
                 >
                   <SwiperSlide>
                     <div className="col-lg-4 col-md-6 d-flex align-items-stretch">

@@ -8,6 +8,7 @@ import magnifier from "../images/img/magnifier.svg"
 import chat from "../images/img/Chat.svg"
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
 
 const Benefits = () => {
 
@@ -103,9 +104,11 @@ const Benefits = () => {
                                 </div>
                                 <div className="mobile-benefits">
                                 <Swiper
+                                    modules={[Navigation]}
                                     spaceBetween={50}
-                                    slidesPerView={1}                                   
+                                    slidesPerView={1}
                                     loop={true}
+                                    navigation
                                 >
                                     <SwiperSlide>
                                         <div className="col-md-6 col-lg-3 d-flex align-items-stretch ">

@@ -994,15 +994,6 @@ section#hero {
   }
 }
 
-@media screen and (max-width: 768px){
-  .swiper-button-prev{
-    left: 1%;
-  }
-
-  .swiper-button-next{
-    right: 1%;
-  }
-}
 
 /*--------------------------------------------------------------
 # Services
@@ -3154,7 +3145,7 @@ section.antes.home .new-slide--container {
 
   .inner-content--box {
     gap: 0.5em;
-    max-width: 60vw;
+    max-width: 67vw;
   }
 
   .inner-content--box h3 {
@@ -3316,6 +3307,30 @@ section.antes.home .new-slide--container {
     bottom: -4.2em;
     left: -2em;
     transform: rotate(352deg);
+  }
+
+  .cambio .sec-heading h2 {
+    max-width: 85%;
+  }
+
+  .testimonials-slider .swiper-button-prev,
+  .testimonials-slider .swiper-button-next { 
+    top: 45%;
+  }
+
+  .cambio .swiper-button-prev, 
+  .cambio .swiper-button-next {
+    top: calc(64% + ((430px - 100vw)*0.4))
+  }
+
+  #services .swiper-button-prev, 
+  #services .swiper-button-next {
+    top: 63%;
+  }
+
+  .beneficios .swiper-button-prev, 
+  .beneficios .swiper-button-next {
+    top: 64%;
   }
 }
 
@@ -3540,6 +3555,34 @@ section.antes.home .new-slide--container {
     left: -2em;
     transform: rotate(352deg);
   }
+
+  .testimonials-slider .swiper-button-prev,
+  .testimonials-slider .swiper-button-next { 
+    top: 50%;
+  }
+
+  .cambio .swiper-button-prev, 
+  .cambio .swiper-button-next {
+    top: 65%
+  }
+
+  #services .swiper-button-prev, 
+  #services .swiper-button-next {
+    top: 70%;
+  }
+
+  .beneficios .swiper-button-prev, 
+  .beneficios .swiper-button-next {
+    top: 64%;
+  }
+
+  #testimonials.antes .nav-pills {
+    margin-bottom: 3rem !important;
+  }
+
+  #testimonials.antes .swiper-pagination {
+    top: 28%;
+  }
   
 }
 
@@ -3606,10 +3649,6 @@ section.antes.home .new-slide--container {
     align-items: center;
   }
 
-  .cambio .sec-heading h2 {
-    max-width: 85%;
-  }
-
   #testimonials.antes.home  .tab--0{
     min-height: 528px;
   }
@@ -3619,11 +3658,35 @@ section.antes.home .new-slide--container {
     left: -0.6em;
   }
 
-  .testimonials-slider .swiper-button-prev {
-    left: 5vw;
+  .mobile-services, 
+  .cambio-mobile, 
+  .mobile-benefits {
+    width: 72.5vw;
+    margin: 0 auto;
   }
+
+
+  #services .swiper-button-prev,
+  .beneficios .swiper-button-prev,
+  .cambio .swiper-button-prev,
+  .testimonials-slider .swiper-button-prev {
+    left: 3.5% !important;
+  }
+
+  #services .swiper-button-next, 
+  .beneficios .swiper-button-next,
+  .cambio .swiper-button-next,
   .testimonials-slider .swiper-button-next {
-    right: 5vw;
+    right: 3.5%;
+  }
+
+  .beneficios, .cambio {
+    position: relative;
+  }
+
+  .tablet-img--slider {
+    width: 75vw;
+    margin: 0 auto;
   }
 
 }

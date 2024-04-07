@@ -4,6 +4,7 @@ import graph from '../images/img/graph.svg'
 import magic from '../images/img/magic.svg'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
 
 const Cambio = () => {
     return(
@@ -66,9 +67,11 @@ const Cambio = () => {
                     </div>
                     <div className='cambio-mobile'>
                     <Swiper
-                        spaceBetween={50}
-                        slidesPerView={1}                                   
-                        loop={true}
+                       modules={[Navigation]}
+                       spaceBetween={50}
+                       slidesPerView={1}
+                       loop={true}
+                       navigation
                     >
                         <SwiperSlide>
                             <div className="col-md-4 col-lg-2 offset-lg-1 d-flex align-items-stretch mb-5 mb-lg-0">
